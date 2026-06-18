@@ -13,9 +13,9 @@ Este projeto foi desenvolvido estritamente para fins de estudo em engenharia rev
 Resolução automática do Process ID navegando pelo diretório virtual /proc.
 - Mapeamento de Memória:
 Leitura e parse do /proc/[pid]/maps filtrando apenas por regiões com permissão de execução (r-xp), otimizando a varredura e evitando Segmentation Faults.
-#- AOB Scanning:
+- AOB Scanning:
 Busca por uma matriz de bytes (assinatura Assembly) diretamente na memória bruta do processo usando pread.
-#- Code Patching:
+- Code Patching:
 Substituição de instruções originais por opcodes arbitrários (ex.: NOPs 0x90) em tempo de execução via pwrite, alterando a lógica do programa sem necessidade de arquivos    - ntermediários.
 
 ## Setup de Ambiente de testes 
